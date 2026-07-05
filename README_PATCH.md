@@ -1,43 +1,36 @@
-# Dejavu91 — Arabic Client Patch (auto-update)
+# Dejavu91 — Arabic Client Patch (zero-setup auto-update)
 
-This folder is a **git patch repo**: it tracks ONLY the small client changes
+This is a **git patch repo** tracking only the small Arabic client changes
 (`override_ar/`, `SFrame_ME.exe`, `LAUNCHER_AR.bat`) — NOT the multi-GB base client
-(`data.00*` are git-ignored). Testers run the launcher; it `git pull`s the latest
-patch before starting the game.
+(`data.00*` are git-ignored). Testers run **`PLAY_ARABIC.bat`** and everything is automatic.
 
 ## How it works
-- All our changes live as **loose files** in `override_ar/` (item/string/motion DB,
-  icon sheets, 742 item icons). The client loads them via `/secondres:override_ar`,
-  overriding the base packs — no repacking, no corruption risk.
-- `LAUNCHER_AR.bat` runs `git pull --ff-only` first, so testers always get the newest patch.
+- Changes live as loose files in `override_ar/` (item/string/motion DB, icon sheets, 742 item icons).
+  The client loads them via `/secondres:override_ar`, overriding the base packs — no repacking.
+- **`PLAY_ARABIC.bat`** (ships with the base client) auto-installs a portable Git, links to this
+  repo, pulls the latest patch, and launches — no manual steps.
 
-## Tester setup (one time)
-1. Get the **base client** once (the full `RappelzClient` with `data.00*`, `RappelzCmdLauncher.exe`, etc.) — shared separately (too big for git).
-2. Install **Git for Windows** (https://git-scm.com/download/win).
-3. Open a terminal in the client folder and link it to the patch repo:
-   ```
-   cd <path>\RappelzClient
-   git init
-   git remote add origin <PATCH_REPO_URL>
-   git fetch origin
-   git checkout -f main
-   ```
-   (This pulls in `override_ar/`, `SFrame_ME.exe`, `LAUNCHER_AR.bat` without touching the ignored base files.)
-4. Run **`LAUNCHER_AR.bat`** — it auto-updates and launches.
+## Tester setup — ZERO setup
+1. Get the **base client** once (the full `RappelzClient` folder — shared separately, too big for git).
+   It already contains `PLAY_ARABIC.bat`.
+2. Double-click **`PLAY_ARABIC.bat`**. On first run it:
+   - downloads a portable Git (~40 MB, no admin, no install wizard) into `_git\`,
+   - downloads the latest Arabic patch from GitHub,
+   - launches the game.
+3. Every later run: it just pulls the newest patch and launches.
 
-## Every launch after that
-Just run `LAUNCHER_AR.bat`. It pulls the latest patch and starts the game.
+That's it — no Git install, no commands, no accounts.
 
 ## Developer (you) — publish an update
 After changing anything in `override_ar/` (or rebuilding `SFrame_ME.exe`):
 ```
-cd <path>\RappelzClient
 push_patch.bat "what changed"
 ```
-Testers get it on their next launch.
+Testers get it automatically on their next `PLAY_ARABIC.bat` run.
 
 ## Notes
-- Base-client files (`data.00*`, other exes) are git-ignored — never committed.
-- `patch_version.txt` is a human-readable build counter (optional).
+- `PLAY_ARABIC.bat` and `_git\` are git-ignored (bootstrap + portable Git stay local; ship
+  `PLAY_ARABIC.bat` inside the base-client folder you distribute).
+- `LAUNCHER_AR.bat` is the plain launcher (no bootstrap) for machines that already have Git.
 - Final release: fold `override_ar/` into `data.00*` (one clean repack), re-enable the
-  `copy data.001.ar` line in the launcher, drop `/secondres` and the git-pull.
+  `copy data.001.ar` line, drop `/secondres` and the auto-update.
