@@ -6,6 +6,7 @@
 !/SFrame_ME.exe
 !/LAUNCHER_AR.bat
 !/patch_version.txt
+!/start_game.bat
 !/push_patch.bat
 # within override_ar, keep everything
 !override_ar/**

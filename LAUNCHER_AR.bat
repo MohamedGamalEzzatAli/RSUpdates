@@ -21,5 +21,4 @@ if %errorlevel%==0 (
 
 rem RECOVERY 2026-07-05: data.001.ar is corrupt; using pristine data.001 + /secondres override. Re-enable copy after final repack.
 rem copy /Y "data.001.ar" "data.001" >nul
-set "__COMPAT_LAYER=RunAsInvoker"
-RappelzCmdLauncher.exe SFrame_ME.exe /auth_ip:127.0.0.1 /auth_port:4500 /use_nprotect:0 /country:ME /locale:windows-1256 /notenc /secondres:override_ar
+call "%~dp0start_game.bat"
