@@ -1,0 +1,1069 @@
+begin genwnd
+id = window_main_inventory_character;
+spr = ui_frame.spr;
+rect = 0,0,342,485;
+style = KSTYLE_NOMINIMIZE | KSTYLE_NOTITLE | KSTYLE_NOSTATUSBAR | KSTYLE_NOFRAME | KSTYLE_NOTOPFRAME | KSTYLE_MOVE_BY_CUSTOM | KSTYLE_VERTICAL_REPEAT |;
+end
+
+begin static
+id = outframe;
+spr = ui_frame.spr;
+ani = common_panel_outframe_copper;
+rect = 0,0,342,484;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = titlebar;
+spr = ui_frame.spr;
+ani = ;
+rect = 0,0,341,22;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = titlebar_deco;
+spr = ui_frame.spr;
+ani = common_titlebar_deco_opacity;
+rect = 0,2,340,24;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin static
+id = text_01;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_02><size:10><hcenter><vcenter><$9766:장__착>";
+rect = 50,3,300,21;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin simplebutton
+id = button_close;
+spr = ui_frame.spr;
+ani = common_button_titanium_close;
+rect = 321,6,336,21;
+end
+
+begin static
+id = frame_deco_01;
+spr = ui_frame.spr;
+ani = common_layout_copper_gold_horizon;
+rect = 4,430,338,432;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = frame_deco_02;
+spr = ui_frame.spr;
+ani = common_layout_copper_gold_horizon;
+rect = 4,383,338,385;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = inframe_bg;
+spr = ui_frame.spr;
+ani = common_panel_inframe_copper_black;
+rect = 83,24,263,338;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin 3dstatic
+id = body_view;
+spr = ui_frame.spr;
+ani = ;
+rect = 85,26,259,333;
+end
+
+begin static
+id = inframe_bg_01;
+spr = ui_frame.spr;
+ani = common_panel_box_text;
+rect = 48,441,330,461;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin simplebutton
+id = button_bag;
+spr = ui_frame.spr;
+ani = game_mark_titanium_player_character;
+rect = 353,20,376,43;
+end
+
+begin simplebutton
+id = button_costumeoff;
+spr = ui_frame.spr;
+ani = common_button_titanium_costumeoff;
+rect = 265,296,283,314;
+end
+
+begin simplebutton
+id = button_change;
+spr = ui_frame.spr;
+ani = common_button_titanium_weaponchange;
+rect = 62,301,80,319;
+end
+
+begin simplebutton
+id = button_costumeon;
+spr = ui_frame.spr;
+ani = common_button_titanium_costumeon;
+rect = 434,127,452,145;
+end
+
+begin simplebutton
+id = button_allrepair;
+spr = ui_frame.spr;
+ani = common_button_titanium_repair;
+rect = 61,100,79,118;
+end
+
+begin multi_icon
+id = icon_slot_blue01;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_back_weaponslot_opacity;
+rect = 376,293,410,327;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_zero;
+spr = ui_frame.spr;
+ani = common_mark_titanium_repair_zero;
+rect = 408,128,417,137;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin multi_icon
+id = icon_ride;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_ride;
+rect = 7,53,41,87;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_helm;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_helmet;
+rect = 7,119,41,153;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_face;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_face;
+rect = 45,119,79,153;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_armor;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_clothe;
+rect = 7,162,41,196;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_cloak;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_mantle;
+rect = 45,162,79,196;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_glove;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_glove;
+rect = 7,206,41,240;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_boots;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_boots;
+rect = 45,206,79,240;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_back_weapon01;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_weapon;
+rect = 9,249,43,283;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_weapon;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_weapon;
+rect = 7,254,41,288;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_back_weapon02;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_shield;
+rect = 47,249,81,283;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_shield;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_shield;
+rect = 45,254,79,288;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_emblem_deco;
+spr = ui_frame.spr;
+ani = static_inventory_emblem;
+rect = 299,53,333,87;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_helm_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_helmet;
+rect = 262,119,296,153;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_shoulder_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_shoulder;
+rect = 300,119,334,153;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_armor_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_clothe;
+rect = 262,162,296,196;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_cloak_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_mantle;
+rect = 300,162,334,196;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_glove_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_glove;
+rect = 262,206,296,240;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_boots_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_boots;
+rect = 300,206,334,240;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_back_weapon03;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_weapon;
+rect = 265,249,299,283;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_weapon_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_weapon;
+rect = 263,254,297,288;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_back_weapon04;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_shield;
+rect = 303,249,337,283;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_shield_deco;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_deco_shield;
+rect = 300,254,334,288;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_belt;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_belt;
+rect = 4,388,38,422;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_17;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_blue;
+rect = 38,387,78,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_18;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_blue;
+rect = 75,387,115,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_19;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_blue;
+rect = 112,387,152,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_20;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_blue;
+rect = 149,387,189,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_14;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_yellow;
+rect = 188,387,228,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_13;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_yellow;
+rect = 225,387,265,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_12;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_yellow;
+rect = 262,387,302,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = slot_line_11;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_yellow;
+rect = 299,387,339,427;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_01;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_beltslot_open;
+rect = 41,390,75,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_02;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_beltslot;
+rect = 78,390,112,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_03;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_beltslot;
+rect = 115,390,149,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_04;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_beltslot;
+rect = 152,390,186,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_05;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_beltslot;
+rect = 191,390,225,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_06;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_beltslot;
+rect = 228,390,262,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_07;
+spr = ui_frame.spr;
+ani = static_inventory_boss_card;
+rect = 265,390,299,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_beltcarslot_08;
+spr = ui_frame.spr;
+ani = static_inventory_boss_card;
+rect = 302,390,336,424;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_bag;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_bag;
+rect = 6,338,40,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_backpack;
+spr = ui_frame.spr;
+ani = static_inventory_hair_deco;
+rect = 43,338,77,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_neck;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_necklace;
+rect = 127,338,161,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_ear;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_earing;
+rect = 169,338,203,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_ear_01;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_earing;
+rect = 212,338,246,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_ring;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_ring;
+rect = 255,338,289,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_ring02;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_ring;
+rect = 299,338,333,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_chaos_stone;
+spr = ui_frame.spr;
+ani = static_inventory_chaos_stone;
+rect = 11,440,45,474;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_rsv1;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_icon;
+rect = 85,338,119,372;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_rsv2;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_ring;
+rect = 398,339,432,373;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_rsv3;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_ring;
+rect = 434,339,468,373;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin multi_icon
+id = icon_rsv4;
+spr = ui_frame.spr;
+ani = common_panel_titanium_slot_ring;
+rect = 470,339,504,373;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin static
+id = mark_costumeoff;
+spr = ui_frame.spr;
+ani = common_mark_titanium_costumeoff;
+rect = 371,418,405,452;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = panel_creaturecard_rank_0;
+spr = ui_frame.spr;
+ani = game_panel_creaturecard_rank_0;
+rect = 391,59,425,93;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = panel_creaturecard_rank_1;
+spr = ui_frame.spr;
+ani = game_panel_creaturecard_rank_1;
+rect = 355,59,389,93;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = panel_creaturecard_rank_2;
+spr = ui_frame.spr;
+ani = game_panel_creaturecard_rank_2;
+rect = 434,62,468,96;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = panel_creaturecard_rank_3;
+spr = ui_frame.spr;
+ani = game_panel_creaturecard_rank_3;
+rect = 474,62,508,96;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = panel_creaturecard_rank_4;
+spr = ui_frame.spr;
+ani = game_panel_creaturecard_rank_4;
+rect = 514,62,548,96;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = panel_creaturecard_rank_5;
+spr = ui_frame.spr;
+ani = game_panel_creaturecard_rank_5;
+rect = 554,62,588,96;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_creature_enhance_01;
+spr = ui_frame.spr;
+ani = game_mark_creature_enhance;
+rect = 376,407,410,441;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_creature_evolution_01;
+spr = ui_frame.spr;
+ani = game_mark_creature_evolution_01;
+rect = 358,398,392,432;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_creature_evolution_02;
+spr = ui_frame.spr;
+ani = game_mark_creature_evolution_02;
+rect = 422,397,456,431;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_creature_evolution_03;
+spr = ui_frame.spr;
+ani = game_mark_creature_evolution_03;
+rect = 466,415,500,449;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_enchant_00;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_enchant;
+rect = 536,457,570,491;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_enchant_01;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_enchant_01;
+rect = 497,455,531,489;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_enchant_02;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_enchant_02;
+rect = 585,455,619,489;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_khrooshop;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_khrooshop;
+rect = 404,422,438,456;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_enchant_00_over;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_enchant_over;
+rect = 363,453,397,487;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_enchant_01_over;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_enchant_01_over;
+rect = 406,454,440,488;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_enchant_02_over;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_enchant_02_over;
+rect = 444,456,478,490;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_beltslot_khrooshop_over;
+spr = ui_frame.spr;
+ani = common_mark_titanium_beltslot_khrooshop_over;
+rect = 442,425,476,459;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_lac_base;
+spr = ui_frame.spr;
+ani = common_guage_titanium_lac_base_head;
+rect = 40,457,85,482;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_lac_base_01;
+spr = ui_frame.spr;
+ani = common_guage_titanium_lac_base;
+rect = 75,466,333,474;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_purple;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_purple;
+rect = 75,466,333,474;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 409,156,437,158;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_cyan;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_cyan;
+rect = 410,164,438,166;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_red;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_red;
+rect = 409,172,437,174;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_grey;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_grey;
+rect = 410,181,438,183;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_lightgrey;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_lightgrey;
+rect = 411,191,439,193;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_01;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 6,152,40,160;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_02;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 6,195,40,203;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_03;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 6,239,40,247;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_04;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 44,239,78,247;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_05;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 6,287,40,295;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_06;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 44,287,78,295;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_07;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 4,421,38,429;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_08;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 126,371,160,379;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_09;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 169,371,203,379;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_10;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 255,371,289,379;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_11;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 299,371,333,379;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = guage_base_12;
+spr = ui_frame.spr;
+ani = common_guage_titanium_base;
+rect = 212,371,246,379;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_01;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 9,290,37,292;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_02;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 47,290,75,292;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_03;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 9,198,37,200;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_04;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 9,155,37,157;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_05;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 9,242,37,244;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_06;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 47,242,75,244;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_07;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 7,424,35,426;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_08;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 215,374,243,376;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_09;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 129,374,157,376;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_10;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 258,374,286,376;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_11;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 302,374,330,376;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = gauge_repair_line_yellowgreen_12;
+spr = ui_frame.spr;
+ani = common_guage_titanium_line_yellowgreen;
+rect = 172,374,200,376;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = text_02;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_01><size:8><#a0a0a0><left><$9702:탈_것>";
+rect = 7,32,59,46;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin static
+id = text_03;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_01><size:8><#a0a0a0><left><$6460:장_비>";
+rect = 7,100,59,114;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin static
+id = text_04;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_01><size:8><#a0a0a0><left><$7211:꾸미기>";
+rect = 262,100,318,114;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin static
+id = text_06;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_02><size:9><left><#a0a0a0><$6616:LAC>";
+rect = 50,444,135,458;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = text_07;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_02><size:9><#d0d0d0><right>075/100";
+rect = 179,444,329,458;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_equip;
+spr = ui_frame.spr;
+ani = game_mark_titanium_inventory_equip;
+rect = 387,19,410,42;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = mark_right_click_01;
+spr = ui_frame.spr;
+ani = common_mark_titanium_right_click_01;
+rect = 368,126,381,141;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = text_05;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_01><size:8><#898989><top><left><$9703:[?]_라크_에너지를_모아_부스터_칩이나_루피로_교환할_수_있습니다.>";
+rect = 419,503,747,535;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin static
+id = image_shadow_01;
+spr = ui_frame.spr;
+ani = game_panel_inventory_inner_shadow;
+rect = 593,123,766,371;
+flag = KFLAG_NO_GET_MESSAGE |;
+end
+
+begin static
+id = text_08;
+spr = ui_frame.spr;
+ani = ;
+caption = "<font:font_01><size:8><#a0a0a0><left><$7256:부스터/앰블럼>";
+rect = 263,32,333,46;
+flag = KFLAG_NO_GET_MESSAGE | KFLAG_SINGLE_LINE |;
+end
+
+begin multi_icon
+id = icon_boost_deco;
+spr = ui_frame.spr;
+ani = static_inventory_booster;
+rect = 262,52,296,86;
+flag = KFLAG_CAN_DRAG |;
+end
+
+begin simplebutton
+id = button_zoom_2;
+spr = ui_frame.spr;
+ani = common_button_titanium_list_fold;
+rect = 208,25,226,41;
+end
+
+begin simplebutton
+id = button_zoom_1;
+spr = ui_frame.spr;
+ani = common_button_titanium_all_view;
+rect = 225,25,243,41;
+end
+
+begin simplebutton
+id = button_zoom_0;
+spr = ui_frame.spr;
+ani = common_button_titanium_list_unfold;
+rect = 242,25,260,41;
+end
+
