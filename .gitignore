@@ -1,0 +1,11 @@
+# Patch repo — track ONLY the AR client patch, ignore the multi-GB base client.
+/*
+!/.gitignore
+!/README_PATCH.md
+!/override_ar/
+!/SFrame_ME.exe
+!/LAUNCHER_AR.bat
+!/patch_version.txt
+!/push_patch.bat
+# within override_ar, keep everything
+!override_ar/**
