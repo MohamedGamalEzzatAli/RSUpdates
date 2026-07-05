@@ -8,5 +8,7 @@
 !/patch_version.txt
 !/start_game.bat
 !/push_patch.bat
+# client runtime DLLs (required for SFrame_ME.exe to launch)
+!/*.dll
 # within override_ar, keep everything
 !override_ar/**
