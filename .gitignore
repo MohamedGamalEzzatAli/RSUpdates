@@ -12,3 +12,6 @@
 !/*.dll
 # within override_ar, keep everything
 !override_ar/**
+
+# never ship the tool-made .bak backups
+override_ar/*.bak
