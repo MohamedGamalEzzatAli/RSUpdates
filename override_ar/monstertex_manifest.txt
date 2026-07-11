@@ -1,0 +1,6 @@
+# monstertex manifest  (apply)
+out: F:/Rappelz/Dejavu91/RappelzClient/override_ar
+
+model crystal_hectwb  (seed crystal_hectwb.cob):
+  missing-before: 0
+
