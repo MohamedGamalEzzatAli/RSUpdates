@@ -8,7 +8,7 @@ source and verification provenance for `d3d9.dll`.
 - Repository: https://github.com/AhmedEzzat211/legacy-graphics-engine
 - Draft source pull request: https://github.com/AhmedEzzat211/legacy-graphics-engine/pull/2
 - Branch: `phase-16-visual-enhancement`
-- Commit: `286db023a67fd6d263163c25bfa710e4f0812686`
+- Commit: `e70dfaf1d30f41537a04283205f64811bc347364`
 - Build target: `x86 Release`
 - Build output: `build-x86/tools/proxy-dll-loader/Release/d3d9.dll`
 
@@ -20,6 +20,8 @@ source and verification provenance for `d3d9.dll`.
 
 The tracked DLL was compared directly with the final verified LGE build output;
 both byte length and SHA-256 matched.
+The CI portability follow-up remained binary-identical for the x86 Release
+proxy.
 
 ## Verification
 
